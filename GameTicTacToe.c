@@ -373,7 +373,7 @@ void initial_variabel(int mode){
 }
 
 void run_3x3(int musuh, int mode){
-	char ulang='y';
+	int ulang= 1 ;
 	char kesulitan='0';
 	initial_variabel(mode); //initial variabel data pemain
 	char papan_3x3[3][3];
@@ -482,9 +482,9 @@ void run_3x3(int musuh, int mode){
 		pemain_3x3[0].total = 3*pemain_3x3[0].win + pemain_3x3[0].draw - pemain_3x3[0].lose;
 		pemain_3x3[1].total = 3*pemain_3x3[1].win + pemain_3x3[1].draw - pemain_3x3[1].lose;
 		
-		printf("\n Re-duel (y/n): "); //reduel sama back to menu
-	    scanf("%c",&ulang);
-	}while(ulang=='y');
+		printf("\n Type 1 for Re-duel and type 0 to end game: "); //reduel sama back to menu
+	    scanf("%d",&ulang);
+	}while(ulang==1);
 	writeData(musuh, mode);
 }
 
@@ -894,7 +894,7 @@ void Display_5x5(char papan_5x5[5][5][2], char kesulitan, int musuh){
 }
 
 void run_5x5(int musuh, int mode){ 
-	char ulang='y';
+	int ulang=1;
 	char kesulitan;
 	initial_variabel(mode);
 	do{
@@ -1001,9 +1001,9 @@ void run_5x5(int musuh, int mode){
 		pemain_5x5[0].total = 3*pemain_5x5[0].win + pemain_5x5[0].draw - pemain_5x5[0].lose;
 		pemain_5x5[1].total = 3*pemain_5x5[1].win + pemain_5x5[1].draw - pemain_5x5[1].lose;
 		
-		printf("\n Re-duel (y/n): ");
-	    scanf("%c",&ulang);
-	}while(ulang=='y');
+		printf("\n Type 1 for Re-duel and type 0 to end game: "); //reduel sama back to menu
+	    scanf("%d",&ulang);
+	}while(ulang==1);
 	writeData(musuh,mode);
 }
 
@@ -1665,7 +1665,7 @@ void computer_move_5x5(char papan_5x5[5][5][2], char kesulitan){
 }
 
 void run_7x7(int musuh, int mode){
-	char ulang='y';
+	int ulang=1;
 	char kesulitan;	
 	initial_variabel(mode);
 	do{
@@ -1772,9 +1772,9 @@ void run_7x7(int musuh, int mode){
 		pemain_7x7[0].total = 3*pemain_7x7[0].win + pemain_7x7[0].draw - pemain_7x7[0].lose;
 		pemain_7x7[1].total = 3*pemain_7x7[1].win + pemain_7x7[1].draw - pemain_7x7[1].lose;
 		
-		printf("\n Re-duel (y/n): ");
-	    scanf("%c",&ulang);
-	}while(ulang=='y');
+		printf("\n Type 1 for Re-duel and type 0 to end game: "); //reduel sama back to menu
+	    scanf("%d",&ulang);
+	}while(ulang== 1 );
 	
 	writeData(musuh, mode);	
 }
