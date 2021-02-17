@@ -25,45 +25,45 @@ HighscoreData list_3x3[100];
 HighscoreData list_5x5[100];
 HighscoreData list_7x7[100];
 
-void input_nama(int musuh, int mode);
-void initial_variabel(int mode);
-void swap (int i, int j, int mode);
-int GetData();
-void writeData(int musuh, int mode);
-void sortHighscore(int N, int mode);
-void highscore(int mode);
+void input_nama(int musuh, int mode); //305
+void initial_variabel(int mode); //341
+void swap (int i, int j, int mode); //853
+int GetData(); //802
+void writeData(int musuh, int mode); //729
+void sortHighscore(int N, int mode); //823
+void highscore(int mode); //760
 
 //Matrik 3x3
-void Display_3x3(char papan_3x3[3][3], char kesulitan, int musuh);
-void player_move_3x3(int giliran, char papan_3x3[3][3]);																	
-void computer_move_3x3(char papan_3x3[3][3], char kesulitan);
-char check_3x3(char papan_3x3[3][3]);
-void run_3x3(int musuh, int mode);
-void init_board_3x3(char papan_3x3[3][3]);
+void Display_3x3(char papan_3x3[3][3], char kesulitan, int musuh); //555
+void player_move_3x3(int giliran, char papan_3x3[3][3]); //491																
+void computer_move_3x3(char papan_3x3[3][3], char kesulitan); //580
+char check_3x3(char papan_3x3[3][3]); //525
+void run_3x3(int musuh, int mode); //375
+void init_board_3x3(char papan_3x3[3][3]); //331
 
 //Matrik 5x5
-void Display_5x5(char papan_5x5[5][5][2], char kesulitan, int musuh);
-void player_move_5x5(int giliran, char papan_5x5[5][5][2]);																	
-void computer_move_5x5(char papan_5x5[5][5][2], char kesulitan);
-char check_5x5(char papan_5x5[5][5][2]);
-void run_5x5(int musuh, int mode);
+void Display_5x5(char papan_5x5[5][5][2], char kesulitan, int musuh); //870
+void player_move_5x5(int giliran, char papan_5x5[5][5][2]); //1092														
+void computer_move_5x5(char papan_5x5[5][5][2], char kesulitan); //1136
+char check_5x5(char papan_5x5[5][5][2]); //1010
+void run_5x5(int musuh, int mode); //896
 
 //Matrik 7x7
-void run_7x7(int musuh, int mode);
-void Display_7x7(char papan_7x7[7][7][2], char kesulitan, int musuh);
-void player_move_7x7(int giliran, char papan_7x7[7][7][2]);																	
-void computer_move_7x7(char papan_7x7[7][7][2], char kesulitan);
-char check_7x7(char papan_7x7[7][7][2]);
+void run_7x7(int musuh, int mode); //1667
+void Display_7x7(char papan_7x7[7][7][2], char kesulitan, int musuh); //1782
+void player_move_7x7(int giliran, char papan_7x7[7][7][2]);	//1809											
+void computer_move_7x7(char papan_7x7[7][7][2], char kesulitan); //1951
+char check_7x7(char papan_7x7[7][7][2]); //1858
 
 //Umum
-void header();
-void playgame();
-void help();
-void credits();
-int PilihanMusuh();
-int PilihanMode();
-void PilihanModeHighscore();
-int PilihanKesulitan();
+void header(); //98
+void playgame(); //213
+void help(); //106
+void credits(); //195
+int PilihanMusuh(); //231
+int PilihanMode(); //251
+void PilihanModeHighscore(); //271
+int PilihanKesulitan(); //288
 
 void main(){
 	char pilihMenu;
