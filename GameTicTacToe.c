@@ -233,7 +233,7 @@ int PilihanMusuh(){
 	system("cls");
 	do{
 		printf("\n\t\t\t\t|~|~|~|~TIC TAC TOE~|~|~|~|");
-		printf("\n\n\t\t\t\t~|Choose Opponent Game|~");
+		printf("\n\n\t\t\t\t  ~|Choose Opponent Game|~");
 		printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 		printf("\t\t\t\tPlay with friend:(1)\n");
 		printf("\t\t\t\tPlay with computer:(2)\n");
@@ -252,7 +252,7 @@ int PilihanMode(){
 	int b;
 	system("cls");
 	printf("\n\t\t\t\t~|~|~|~|~TIC TAC TOE~|~|~|~|~");
-	printf("\n\n\t\t\t\t~~Choose Mode Game~~\n");
+	printf("\n\n\t\t\t\t     ~~Choose Mode Game~~\n");
 	do{	
 		printf("\n\t\t\t\t>>>>---------------------<<<<\n\n");
 		printf("\t\t\t\t     TIC TAC TOE 3x3:(3)\n");
