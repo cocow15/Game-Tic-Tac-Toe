@@ -108,7 +108,7 @@ void help(){
 	char a='0';
 	do{
 		system("cls");
-		printf("\n\t\t\t\t||||~TIC TAC TOE|||~|");
+		printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
 		printf("\n\n\t\t\t\t\t  |Help|");
 		printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 		printf("\t\t\t\t1. How to input \n");
@@ -121,8 +121,8 @@ void help(){
 	    scanf("%s",&pilih);
 	    if ( pilih == '1' ){
 	    	system("cls");
-	    	printf("\n\t\t\t\t||||~TIC TAC TOE|||~|");
-			printf("\n\n\t\t\t\t  |Help - How to input|");
+	    	printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
+			printf("\n\n\t\t\t\t   |Help - How to input|");
 			printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 			printf("\t\t\t\t1.Masukkan angka sesuai \n");
 			printf("\t\t\t\t  dengan nomor pada papan \n");
@@ -137,8 +137,8 @@ void help(){
 			printf("\n\t\t\t\t>>>---------------------<<<\n\n");
 		}else if ( pilih == '2' ){
 			system("cls");
-	    	printf("\n\t\t\t\t ||||~TIC TAC TOE|||~|");
-			printf("\n\n\t\t\t\t~|Help - Winning Conditions|~");
+	    	printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
+			printf("\n\n\t\t\t       ~|Help - Winning Conditions|~");
 			printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 			printf("\t\t\t\tPemain yang pertama kali\n");
 			printf("\t\t\t\tberhasil menyusun tanda \n");
@@ -154,8 +154,8 @@ void help(){
 	    	scanf("%s",&a);
 		}else if ( pilih == '3' ){
 			system("cls");
-	    	printf("\n\t\t\t\t||||~TIC TAC TOE|||~|");
-			printf("\n\n\t\t\t\t |Help - Earning Points|");
+	    	printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
+			printf("\n\n\t\t\t\t  |Help - Earning Points|");
 			printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 			printf("\t\t\t\tJika kotak pada papan \n");
 			printf("\t\t\t\tpermainan sudah terisi \n");
@@ -170,8 +170,8 @@ void help(){
 	    	scanf("%s",&a);
 		}else if ( pilih == '4' ){
 			system("cls");
-	    	printf("\n\t\t\t\t||||~TIC TAC TOE|||~|");
-			printf("\n\n\t\t\t\t |Help - Earning Points|");
+	    	printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
+			printf("\n\n\t\t\t\t  |Help - Earning Points|");
 			printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 			printf("\t\t\t\tHighscore akan mencatat \n");
 			printf("\t\t\t\triwayat point pemain dalam\n");
