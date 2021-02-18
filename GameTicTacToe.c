@@ -108,7 +108,7 @@ void help(){
 	char a='0';
 	do{
 		system("cls");
-		printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
+		printf("\n\t\t\t\t||||~TIC TAC TOE|||~|");
 		printf("\n\n\t\t\t\t\t  |Help|");
 		printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 		printf("\t\t\t\t1. How to input \n");
@@ -121,8 +121,8 @@ void help(){
 	    scanf("%s",&pilih);
 	    if ( pilih == '1' ){
 	    	system("cls");
-	    	printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
-			printf("\n\n\t\t\t\t   |Help - How to input|");
+	    	printf("\n\t\t\t\t||||~TIC TAC TOE|||~|");
+			printf("\n\n\t\t\t\t  |Help - How to input|");
 			printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 			printf("\t\t\t\t1.Masukkan angka sesuai \n");
 			printf("\t\t\t\t  dengan nomor pada papan \n");
@@ -137,8 +137,8 @@ void help(){
 			printf("\n\t\t\t\t>>>---------------------<<<\n\n");
 		}else if ( pilih == '2' ){
 			system("cls");
-	    	printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
-			printf("\n\n\t\t\t       ~|Help - Winning Conditions|~");
+	    	printf("\n\t\t\t\t ||||~TIC TAC TOE|||~|");
+			printf("\n\n\t\t\t\t~|Help - Winning Conditions|~");
 			printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 			printf("\t\t\t\tPemain yang pertama kali\n");
 			printf("\t\t\t\tberhasil menyusun tanda \n");
@@ -154,8 +154,8 @@ void help(){
 	    	scanf("%s",&a);
 		}else if ( pilih == '3' ){
 			system("cls");
-	    	printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
-			printf("\n\n\t\t\t\t  |Help - Earning Points|");
+	    	printf("\n\t\t\t\t||||~TIC TAC TOE|||~|");
+			printf("\n\n\t\t\t\t |Help - Earning Points|");
 			printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 			printf("\t\t\t\tJika kotak pada papan \n");
 			printf("\t\t\t\tpermainan sudah terisi \n");
@@ -170,8 +170,8 @@ void help(){
 	    	scanf("%s",&a);
 		}else if ( pilih == '4' ){
 			system("cls");
-	    	printf("\n\t\t\t\t   ||||~TIC TAC TOE~||||");
-			printf("\n\n\t\t\t\t  |Help - Earning Points|");
+	    	printf("\n\t\t\t\t||||~TIC TAC TOE|||~|");
+			printf("\n\n\t\t\t\t |Help - Earning Points|");
 			printf("\n\n\t\t\t\t>>>---------------------<<<\n\n");
 			printf("\t\t\t\tHighscore akan mencatat \n");
 			printf("\t\t\t\triwayat point pemain dalam\n");
@@ -877,23 +877,23 @@ void Display_5x5(char papan_5x5[5][5][2], char kesulitan, int musuh){
 	header();
 
 	if(musuh==1){
-		printf("\n\t\t\t\t      %s (X)  -  %s (O)\n\n", pemain_5x5[0].nama, pemain_5x5[1].nama);		
+		printf("\n\t\t\t      %s (X)  -  %s (O)\n\n", pemain_5x5[0].nama, pemain_5x5[1].nama);		
 	}else if(musuh==2){
-		printf("\n\t\t\t\t      %s (X)  -  Computer (O)\n\n", pemain_5x5[0].nama);
+		printf("\n\t\t\t      %s (X)  -  Computer (O)\n\n", pemain_5x5[0].nama);
 	}	
 	
 	if(kesulitan=='1'){
-		printf("\t\t\t\t               ~Easy~");		
+		printf("\t\t\t               ~Easy~");		
 	}else if(kesulitan=='2'){
-		printf("\t\t\t\t              ~Medium~");		
+		printf("\t\t\t              ~Medium~");		
 	}else if(kesulitan=='3'){
-		printf("\t\t\t\t               ~Hard~");	
+		printf("\t\t\t               ~Hard~");	
 	}
-	printf("\n\t\t\t\t____________________________________\n");
+	printf("\n\t\t\t____________________________________\n");
 	for(i=0; i<5; i++){
-		printf("\t\t\t\t|      |      |      |      |      |\n");
-	 	printf("\t\t\t\t|  %c%c  |  %c%c  |  %c%c  |  %c%c  |  %c%c  |\n",papan_5x5[i][0][0],papan_5x5[i][0][1],papan_5x5[i][1][0],papan_5x5[i][1][1],papan_5x5[i][2][0],papan_5x5[i][2][1],papan_5x5[i][3][0],papan_5x5[i][3][1],papan_5x5[i][4][0],papan_5x5[i][4][1]);
-	    printf("\t\t\t\t|______|______|______|______|______|\n");		
+		printf("\t\t\t|      |      |      |      |      |\n");
+	 	printf("\t\t\t|  %c%c  |  %c%c  |  %c%c  |  %c%c  |  %c%c  |\n",papan_5x5[i][0][0],papan_5x5[i][0][1],papan_5x5[i][1][0],papan_5x5[i][1][1],papan_5x5[i][2][0],papan_5x5[i][2][1],papan_5x5[i][3][0],papan_5x5[i][3][1],papan_5x5[i][4][0],papan_5x5[i][4][1]);
+	    printf("\t\t\t|______|______|______|______|______|\n");		
 	}		
 }
 
@@ -933,7 +933,7 @@ void run_5x5(int musuh, int mode){
 			
 			do{
 				Display_5x5(papan_5x5,kesulitan,musuh);
-				printf("\t\t\t\t %s (X) move\n\n\n", pemain_5x5[0].nama);
+				printf("\t\t\t %s (X) move\n\n\n", pemain_5x5[0].nama);
 				player_move_5x5(giliran, papan_5x5);												//player's move
 				Display_5x5(papan_5x5,kesulitan,musuh);												//displaying the current matrix
 				done=check_5x5(papan_5x5);															//checking the matrix
@@ -941,7 +941,7 @@ void run_5x5(int musuh, int mode){
 					break;	
 				}																					//if the return is other than ' ',we break here
 				
-				printf("\t Computer's move (O)\n\n\n");
+				printf("\t\t\t Computer's move (O)\n\n\n");
 				computer_move_5x5(papan_5x5, kesulitan);
 				Display_5x5(papan_5x5,kesulitan,musuh);												//displaying the matrix
 				done=check_5x5(papan_5x5);															//checking the matrix
@@ -952,14 +952,14 @@ void run_5x5(int musuh, int mode){
 			
 			if (first_move == 2) {
 				giliran=giliran+1;
-				printf("\t\t\t\t %s (O) move\n\n\n", pemain_5x5[1].nama);
+				printf("\t\t\t %s (O) move\n\n\n", pemain_5x5[1].nama);
 				player_move_5x5(giliran, papan_5x5);
 				Display_5x5(papan_5x5,kesulitan,musuh);
 				giliran++;
 			}
 		
 			do{
-				printf("\t\t\t\t %s (X) move\n\n\n", pemain_5x5[0].nama);
+				printf("\t\t\t %s (X) move\n\n\n", pemain_5x5[0].nama);
 				player_move_5x5(giliran, papan_5x5);												//player's move
 				Display_5x5(papan_5x5,kesulitan,musuh);												//displaying the current matrix
 				done=check_5x5(papan_5x5);															//checking the matrix
@@ -967,7 +967,7 @@ void run_5x5(int musuh, int mode){
 					break;	
 				}																					//if the return is other than ' ',we break here
 				giliran++;
-				printf("\t\t\t\t %s (O) move\n\n\n", pemain_5x5[1].nama);
+				printf("\t\t\t %s (O) move\n\n\n", pemain_5x5[1].nama);
 				player_move_5x5(giliran, papan_5x5);
 				Display_5x5(papan_5x5,kesulitan,musuh);												//displaying the matrix
 				done=check_5x5(papan_5x5);															//checking the matrix
@@ -977,7 +977,7 @@ void run_5x5(int musuh, int mode){
 		
 		switch(done){
 			case 'X':
-				printf("\t\t\t\t%s won\n\n", pemain_5x5[0].nama);	
+				printf("\t\t\t%s won\n\n", pemain_5x5[0].nama);	
 				pemain_5x5[0].win += 1;
 				if(musuh==1){
 					pemain_5x5[1].lose += 1;
@@ -985,16 +985,16 @@ void run_5x5(int musuh, int mode){
 				break;
 			case 'O':
 				if(musuh==2){
-					printf("\t\t\t\tComputer won\n\n");
+					printf("\t\t\tComputer won\n\n");
 					pemain_5x5[0].lose += 1;	
 				}else{
-					printf("\t\t\t\t%s won\n\n", pemain_5x5[1].nama);
+					printf("\t\t\t%s won\n\n", pemain_5x5[1].nama);
 					pemain_5x5[1].win += 1;
 					pemain_5x5[0].lose += 1;
 				}
 				break;
 			case 'D':
-				printf("\t\t\t\tMatch Drawn\n\n");
+				printf("\t\t\tMatch Drawn\n\n");
 				pemain_5x5[0].draw += 1;
 				if(musuh==1){
 					pemain_5x5[1].draw += 1;
@@ -1098,10 +1098,10 @@ void player_move_5x5(int giliran, char papan_5x5[5][5][2]){
    	clock_t start_time = clock();
 	unsigned int timeout=15000;
 	do{
-		printf("\t\t\t\tEnter the Box Number You Choose (15 Second): ");
+		printf("\t\t\tEnter the Box Number You Choose (15 Second): ");
         scanf("%d",&kot);
         if(kot<1 || kot>25 || papan_5x5[bar][kol][0]=='X' || papan_5x5[bar][kol][0]=='O'){
-			printf("\n\t\t\t\tThe Number You Enter Is Incorrect\n\t\t\t\tTry to type it right!!\n\n");
+			printf("\n\t\t\tThe Number You Enter Is Incorrect\n\t\t\t\tTry to type it right!!\n\n");
 		}
            
         if(kot>=1 && kot<=5){
@@ -1677,19 +1677,19 @@ void run_7x7(int musuh, int mode){
 		int first_move;
 		int giliran=0;
 		char done=' ';
-		printf("\n\t\t\t\t>>>---------------------<<<\n\n");
-		printf("\t\t\t\t %s:(1)\n ", pemain_7x7[0].nama);
+		printf("\n\t\t>>>---------------------<<<\n\n");
+		printf("\t\t %s:(1)\n ", pemain_7x7[0].nama);
 		if(musuh==2){
-			printf("\t\t\t\t Computer:(2)\n");
+			printf("\t\t Computer:(2)\n");
 		}else{
-			printf("\t\t\t\t %s:(2)\n", pemain_7x7[1].nama);
+			printf("\t\t %s:(2)\n", pemain_7x7[1].nama);
 		}
-		printf("\n\t\t\t\t>>>---------------------<<<\n\n");
+		printf("\n\t\t>>>---------------------<<<\n\n");
 		do{
-			printf("\t\t\t\tChoose who moves first: ");
+			printf("\t\tChoose who moves first: ");
 			scanf("%d", &first_move);
 			if(first_move!=1&&first_move!=2){
-			printf("\n\t\t\t\tThe choice you entered is wrong\n\t\t\t\tTry to type it right!!\n\n");
+			printf("\n\t\tThe choice you entered is wrong\n\t\t\t\tTry to type it right!!\n\n");
 			}
 		}while(first_move!=1&&first_move!=2);
 		
@@ -1704,7 +1704,7 @@ void run_7x7(int musuh, int mode){
 		
 			do{
 				Display_7x7(papan_7x7,kesulitan,musuh);
-				printf("\t\t\t\t %s (X) move\n\n\n", pemain_7x7[0].nama);
+				printf("\t\t %s (X) move\n\n\n", pemain_7x7[0].nama);
 				player_move_7x7(giliran, papan_7x7);																//player's move
 				Display_7x7(papan_7x7,kesulitan,musuh);															//displaying the current matrix
 				done=check_7x7(papan_7x7);															//checking the matrix
@@ -1712,7 +1712,7 @@ void run_7x7(int musuh, int mode){
 					break;	
 				}																	//if the return is other than ' ',we break here
 				
-				printf("\t Computer's move (O)\n\n\n");
+				printf("\t\t Computer's move (O)\n\n\n");
 				computer_move_7x7(papan_7x7,kesulitan);
 				Display_7x7(papan_7x7,kesulitan,musuh);															//displaying the matrix
 				done=check_7x7(papan_7x7);															//checking the matrix
@@ -1723,14 +1723,14 @@ void run_7x7(int musuh, int mode){
 			
 			if (first_move == 2) {
 				giliran=giliran+1;
-				printf("\t\t\t\t %s (O) move\n\n\n", pemain_7x7[1].nama);
+				printf("\t\t %s (O) move\n\n\n", pemain_7x7[1].nama);
 				player_move_7x7(giliran, papan_7x7);
 				Display_7x7(papan_7x7,kesulitan,musuh);
 				giliran++;
 			}
 		
 			do{
-				printf("\t\t\t\t %s (X) move\n\n\n", pemain_7x7[0].nama);
+				printf("\t\t %s (X) move\n\n\n", pemain_7x7[0].nama);
 				player_move_7x7(giliran, papan_7x7);																//player's move
 				Display_7x7(papan_7x7,kesulitan,musuh);															//displaying the current matrix
 				done=check_7x7(papan_7x7);															//checking the matrix
@@ -1738,7 +1738,7 @@ void run_7x7(int musuh, int mode){
 					break;	
 				}																	//if the return is other than ' ',we break here
 				giliran++;
-				printf("\t\t\t\t %s (O) move\n\n\n", pemain_7x7[1].nama);
+				printf("\t\t %s (O) move\n\n\n", pemain_7x7[1].nama);
 				player_move_7x7(giliran, papan_7x7);
 				Display_7x7(papan_7x7,kesulitan,musuh);															//displaying the matrix
 				done=check_7x7(papan_7x7);															//checking the matrix
@@ -1748,7 +1748,7 @@ void run_7x7(int musuh, int mode){
 		
 		switch(done){
 			case 'X':
-				printf("\t\t\t\t  %s won\n\n", pemain_7x7[0].nama);	
+				printf("\t\t  %s won\n\n", pemain_7x7[0].nama);	
 				pemain_7x7[0].win += 1;
 				if(musuh==1){
 					pemain_7x7[1].lose += 1;
@@ -1756,16 +1756,16 @@ void run_7x7(int musuh, int mode){
 				break;
 			case 'O':
 				if(musuh==2){
-					printf("\t\t\t\t  Computer won\n\n");
+					printf("\t\t  Computer won\n\n");
 					pemain_7x7[0].lose += 1;	
 				}else{
-					printf("\t\t\t\t  %s won\n\n", pemain_7x7[1].nama);
+					printf("\t\t  %s won\n\n", pemain_7x7[1].nama);
 					pemain_7x7[1].win += 1;
 					pemain_7x7[0].lose += 1;
 				}
 				break;
 			case 'D':
-				printf("\t\t\t\t  Match Drawn\n\n");
+				printf("\t\t  Match Drawn\n\n");
 				pemain_7x7[0].draw += 1;
 				if(musuh==1){
 					pemain_7x7[1].draw += 1;
@@ -1789,24 +1789,24 @@ void Display_7x7(char papan_7x7[7][7][2], char kesulitan, int musuh){
 	header();
 	
 	if(musuh==1){
-		printf("\n\t\t\t\t             %s (X)  -  %s (O)\n\n", pemain_7x7[0].nama, pemain_7x7[1].nama);		
+		printf("\n\t\t             %s (X)  -  %s (O)\n\n", pemain_7x7[0].nama, pemain_7x7[1].nama);		
 	}else if(musuh==2){
-		printf("\n\t\t\t\t             %s (X)  -  Computer (O)\n\n", pemain_7x7[0].nama);
+		printf("\n\t\t             %s (X)  -  Computer (O)\n\n", pemain_7x7[0].nama);
 	}
 	
 	if(kesulitan=='1'){
-		printf("\t\t\t\t                      ~Easy~");		
+		printf("\t\t                      ~Easy~");		
 	}else if(kesulitan=='2'){
-		printf("\t\t\t\t                     ~Medium~");		
+		printf("\t\t                     ~Medium~");		
 	}else if(kesulitan=='3'){
-		printf("\t\t\t\t                      ~Hard~");	
+		printf("\t\t                      ~Hard~");	
 	}
 	
-	printf("\n\t\t\t\t__________________________________________________\n");
+	printf("\n\t\t__________________________________________________\n");
 	for(i=0; i<7; i++){
-		printf("\t\t\t\t|      |      |      |      |      |      |      |\n");
-	 	printf("\t\t\t\t|  %c%c  |  %c%c  |  %c%c  |  %c%c  |  %c%c  |  %c%c  |  %c%c  |\n",papan_7x7[i][0][0],papan_7x7[i][0][1],papan_7x7[i][1][0],papan_7x7[i][1][1],papan_7x7[i][2][0],papan_7x7[i][2][1],papan_7x7[i][3][0],papan_7x7[i][3][1],papan_7x7[i][4][0],papan_7x7[i][4][1],papan_7x7[i][5][0],papan_7x7[i][5][1],papan_7x7[i][6][0],papan_7x7[i][6][1]);
-	    printf("\t\t\t\t|______|______|______|______|______|______|______|\n");		
+		printf("\t\t|      |      |      |      |      |      |      |\n");
+	 	printf("\t\t|  %c%c  |  %c%c  |  %c%c  |  %c%c  |  %c%c  |  %c%c  |  %c%c  |\n",papan_7x7[i][0][0],papan_7x7[i][0][1],papan_7x7[i][1][0],papan_7x7[i][1][1],papan_7x7[i][2][0],papan_7x7[i][2][1],papan_7x7[i][3][0],papan_7x7[i][3][1],papan_7x7[i][4][0],papan_7x7[i][4][1],papan_7x7[i][5][0],papan_7x7[i][5][1],papan_7x7[i][6][0],papan_7x7[i][6][1]);
+	    printf("\t\t|______|______|______|______|______|______|______|\n");		
 	}	
 }
 
@@ -1815,10 +1815,10 @@ void player_move_7x7(int giliran, char papan_7x7[7][7][2]){
 	clock_t start_time = clock();
 	unsigned int timeout=15000;
 	do{
-		printf("\t\t\t\tEnter the Box Number You Choose (15 Second): ");
+		printf("\t\tEnter the Box Number You Choose (15 Second): ");
         scanf("%d",&kot);
         if(kot<1 || kot>49 || papan_7x7[bar][kol][0]=='X' || papan_7x7[bar][kol][0]=='O'){
-			printf("\n\t\t\t\tThe Number You Enter Is Incorrect\n\t\t\t\tTry to type it right!!\n\n");
+			printf("\n\t\tThe Number You Enter Is Incorrect\n\t\t\t\tTry to type it right!!\n\n");
 		}
            
         if(kot>=1 && kot<=7){
