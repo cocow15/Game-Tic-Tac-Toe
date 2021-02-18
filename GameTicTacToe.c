@@ -66,6 +66,10 @@ void PilihanModeHighscore(); //271
 int PilihanKesulitan(); //288
 
 void main(){
+	/*
+		Deskripsi	: Menampilkan tampilan main menu
+		Author		: Anna Kurniaty
+	*/
 	char pilihMenu;
 	do {
 		system("cls");
@@ -96,6 +100,10 @@ void main(){
 }
 
 void header(){
+		/*
+		Deskripsi	: Menampilkan tampilan header
+		Author		: Anna Kurniaty
+	*/
 	printf("\n\t\t\t\t_____________________");
 	printf("\n\t\t\t\t|Welcome to our Game|");
 	printf("\n\t\t\t\t|    TIC TAC TOE    |");
@@ -104,6 +112,10 @@ void header(){
 }
 
 void help(){
+		/*
+		Deskripsi	: Menampilkan tampilan help
+		Author		: Anna Kurniaty
+	*/
 	char pilih='0';
 	char a='0';
 	do{
@@ -193,6 +205,10 @@ void help(){
 }
 
 void credits(){
+		/*
+		Deskripsi	: Menampilkan tampilan credits
+		Author		: Anna Kurniaty
+	*/
 	char kembali='0';
 	system("cls");
 	do{
@@ -211,6 +227,10 @@ void credits(){
 }
 
 void playgame(){
+		/*
+		Deskripsi	: Menjalankan proses untuk memulai permainan
+		Author		: Dimas Wisnu Saputro
+	*/
 	int musuh=0, mode=0;
 	mode=PilihanMode();
 	musuh=PilihanMusuh();
@@ -229,6 +249,10 @@ void playgame(){
 }
 
 int PilihanMusuh(){
+		/*
+		Deskripsi	: Memilih lawan bermain
+		Author		: Anna Kurniaty
+	*/
 	int a;
 	system("cls");
 	do{
@@ -249,6 +273,10 @@ int PilihanMusuh(){
 }
 
 int PilihanMode(){
+		/*
+		Deskripsi	: Memilih mode permainan
+		Author		: Anna Kurniaty
+	*/
 	int b;
 	system("cls");
 	printf("\n\t\t\t\t~|~|~|~|~TIC TAC TOE~|~|~|~|~");
@@ -269,6 +297,10 @@ int PilihanMode(){
 }
 
 void PilihanModeHighscore(){
+		/*
+		Deskripsi	: Memilih highscore berdasarkan mode
+		Author		: Anna Kurniaty
+	*/
 	int mode;
 	system("cls");
 	printf("\n\t\t\t\t~|~|~|~|~TIC TAC TOE~|~|~|~|~");
@@ -286,6 +318,10 @@ void PilihanModeHighscore(){
 }
 
 int PilihanKesulitan(){
+		/*
+		Deskripsi	: Menentukan tingkat kesulitan dalam setiap mode
+		Author		: Dimas Wisnu Saputro
+	*/
 	char kesulitan='0';
 	do{	
 		system("cls");
@@ -303,6 +339,10 @@ int PilihanKesulitan(){
 }
 
 void input_nama(int musuh, int mode){
+		/*
+		Deskripsi	: Menampilkan tampilan saat akan menginput nama pemain
+		Author		: Dimas Wisnu Saputro
+	*/
 	printf("\n\t\t\t\t(Max 15 Character)");
 	printf("\n\t\t\t\tPlease enter a name Player 1: ");
 	fflush(stdin);
@@ -329,6 +369,10 @@ void input_nama(int musuh, int mode){
 } 
 
 void init_board_3x3(char papan_3x3[3][3]){
+		/*
+		Deskripsi	: Menginisialisasi data papan 3x3
+		Author		: Dimas Wisnu Saputro
+	*/
 	int i,j,count=49;
 	for(i=0;i<3;i++){
 		for(j=0;j<3;j++){
@@ -339,6 +383,10 @@ void init_board_3x3(char papan_3x3[3][3]){
 }
 
 void initial_variabel(int mode){
+		/*
+		Deskripsi	: Menginisialisasi variabel
+		Author		: Dimas Wisnu Saputro
+	*/
 	if(mode==3){
 		pemain_3x3[0].win=0 ;
 		pemain_3x3[0].draw=0;
@@ -373,6 +421,10 @@ void initial_variabel(int mode){
 }
 
 void run_3x3(int musuh, int mode){
+		/*
+		Deskripsi	: Menjalankan proses permainan di mode 3x3
+		Author		: Dimas Wisnu Saputro
+	*/
 	int ulang= 1 ;
 	char kesulitan='0';
 	initial_variabel(mode); //initial variabel data pemain
@@ -489,6 +541,10 @@ void run_3x3(int musuh, int mode){
 }
 
 void player_move_3x3(int giliran, char papan_3x3[3][3]){
+		/*
+		Deskripsi	: Menampilkan tampilan saat akan menginput kotak yang akan dipilih
+		Author		: Anna Kurniaty
+	*/
 	int kot,bar,kol;
 	clock_t start_time = clock();
 	unsigned int timeout=15000;
@@ -523,6 +579,10 @@ void player_move_3x3(int giliran, char papan_3x3[3][3]){
 }
 
 char check_3x3(char papan_3x3[3][3]){
+	/*
+		Deskripsi	: Memeriksa kemenangan
+		Author		: Dimas Wisnu Saputro
+	*/
 	int i,j;
 	//row checking
 	for(i=0;i<3;i++)
@@ -553,6 +613,10 @@ char check_3x3(char papan_3x3[3][3]){
 }
 
 void Display_3x3(char papan_3x3[3][3], char kesulitan, int musuh){
+	/*
+		Deskripsi	: Menampilkan papan permainan mode 3x3
+		Author		: Anna Kurniaty
+	*/
 	int i;
 	system("cls");
 	header();
@@ -578,6 +642,10 @@ void Display_3x3(char papan_3x3[3][3], char kesulitan, int musuh){
 }
 
 void computer_move_3x3(char papan_3x3[3][3], char kesulitan){
+	/*
+		Deskripsi	: Menentukan pergerkan computer dalam mode 3x3
+		Author		: Anna Kurniaty
+	*/
 	int i, j;
 	if(kesulitan=='2'||kesulitan=='3'){
 		//XX_ || _XX (Block 2 prioritas)
@@ -731,6 +799,10 @@ void computer_move_3x3(char papan_3x3[3][3], char kesulitan){
 }
 
 void writeData(int musuh, int mode){
+	/*
+		Deskripsi	: Memindahkan data pemain ke data highscore
+		Author		: Dimas Wisnu Saputro
+	*/
 	/* Memindahkan data pemain ke data highscore */
 	if(mode==3){
 		/* Tulis data ke dalam file */
@@ -762,6 +834,10 @@ void writeData(int musuh, int mode){
 }
 
 void highscore(int mode){
+	/*
+		Deskripsi	: Menampilkan data pemain berdasarkan kriteria highscore
+		Author		: Dimas Wisnu Saputro
+	*/
 	/*Menu highscore, menampilkan data pemain sesuai kriteria highscore */
 	int i,N;
 	int cek;
@@ -804,6 +880,10 @@ void highscore(int mode){
 }
 
 int GetData(int mode){
+	/*
+		Deskripsi	: Mengambil data dari file highscore yang sudah disimpan dari modul writeData
+		Author		: Dimas Wisnu Saputro
+	*/
 	/*  Mengambil data dari file highscore yang sudah disimpan dari modul writeData
 		Mengembalikan / menghitung nilai N yaitu banyak nya data yang tersimpan dalam file highscore
 	*/
@@ -825,6 +905,10 @@ int GetData(int mode){
 }
 
 void sortHighscore( int N , int mode) {
+	/*
+		Deskripsi	: Mengurutkan highscore
+		Author		: Dimas Wisnu Saputro
+	*/
 	//sorting highscore berdasarkan total poin
 	int i, j ;
 	if(mode==3){
@@ -855,6 +939,10 @@ void sortHighscore( int N , int mode) {
 }
 
 void swap (int i, int j, int mode){
+	/*
+		Deskripsi	: Menukar data pemain pada highscore
+		Author		: Dimas Wisnu Saputro
+	*/
 	HighscoreData temp;
 	if(mode==3){
 		temp = list_3x3[j];
@@ -872,6 +960,10 @@ void swap (int i, int j, int mode){
 }
 
 void Display_5x5(char papan_5x5[5][5][2], char kesulitan, int musuh){
+	/*
+		Deskripsi	: Menampilkan papan permainan mode 5x5
+		Author		: Anna Kurniaty
+	*/
 	int i;
 	system("cls");
 	header();
@@ -898,6 +990,10 @@ void Display_5x5(char papan_5x5[5][5][2], char kesulitan, int musuh){
 }
 
 void run_5x5(int musuh, int mode){ 
+	/*
+		Deskripsi	: Menjalankan proses permainan di mode 5x5
+		Author		: Dimas Wisnu Saputro
+	*/
 	int ulang=1;
 	char kesulitan;
 	initial_variabel(mode);
@@ -1012,6 +1108,10 @@ void run_5x5(int musuh, int mode){
 }
 
 char check_5x5(char papan_5x5[5][5][2]){
+	/*
+		Deskripsi	: Memeriksa kemenangan
+		Author		: Dimas Wisnu Saputro
+	*/
 	short i,j;
 	//row checking
 	for(i=0; i<5; i++){
@@ -1094,6 +1194,10 @@ char check_5x5(char papan_5x5[5][5][2]){
 }
 
 void player_move_5x5(int giliran, char papan_5x5[5][5][2]){
+	/*
+		Deskripsi	: Menampilkan tampilan saat akan menginput kotak yang akan dipilih
+		Author		: Anna Kurniaty
+	*/
 	int kot,bar,kol;
    	clock_t start_time = clock();
 	unsigned int timeout=15000;
@@ -1138,6 +1242,10 @@ void player_move_5x5(int giliran, char papan_5x5[5][5][2]){
 }
 
 void computer_move_5x5(char papan_5x5[5][5][2], char kesulitan){
+	/*
+		Deskripsi	: Menentukan pergerkan computer dalam mode 5x5
+		Author		: Anna Kurniaty
+	*/
 	int i, j;	
 	//XXX_ || _XXX (Block 3 prioritas)
 	short key1;
@@ -1669,6 +1777,10 @@ void computer_move_5x5(char papan_5x5[5][5][2], char kesulitan){
 }
 
 void run_7x7(int musuh, int mode){
+	/*
+		Deskripsi	: Menjalankan proses permainan di mode 7x7
+		Author		: Dimas Wisnu Saputro
+	*/
 	int ulang=1;
 	char kesulitan;	
 	initial_variabel(mode);
@@ -1784,6 +1896,10 @@ void run_7x7(int musuh, int mode){
 }
 
 void Display_7x7(char papan_7x7[7][7][2], char kesulitan, int musuh){
+	/*
+		Deskripsi	: Menampilkan papan permainan mode 7x7
+		Author		: Anna Kurniaty
+	*/
 	int i;
 	system("cls");
 	header();
@@ -1811,6 +1927,10 @@ void Display_7x7(char papan_7x7[7][7][2], char kesulitan, int musuh){
 }
 
 void player_move_7x7(int giliran, char papan_7x7[7][7][2]){
+	/*
+		Deskripsi	: Menampilkan tampilan saat akan menginput kotak yang akan dipilih
+		Author		: Anna Kurniaty
+	*/
 	int kot,bar,kol;
 	clock_t start_time = clock();
 	unsigned int timeout=15000;
@@ -1860,6 +1980,10 @@ void player_move_7x7(int giliran, char papan_7x7[7][7][2]){
 }														
 
 char check_7x7(char papan_7x7[7][7][2]){
+	/*
+		Deskripsi	:Memeriksa kemenangan
+		Author		: Dimas Wisnu Saputro
+	*/
 	short i,j;
 	//row checking
 	for(i=0; i<7; i++){
@@ -1953,6 +2077,10 @@ char check_7x7(char papan_7x7[7][7][2]){
 }
 
 void computer_move_7x7(char papan_7x7[7][7][2], char kesulitan){
+	/*
+		Deskripsi	: Menentukan pergerkan computer dalam mode 7x7
+		Author		: Dimas Wisnu Saputro
+	*/
 	int i, j;
 	//XXXX_ || _XXXX (Block 4 prioritas)
 	short key1;
