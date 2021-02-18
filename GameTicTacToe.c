@@ -642,11 +642,13 @@ void computer_move_3x3(char papan_3x3[3][3], char kesulitan){
 		if((papan_3x3[0][0]==papan_3x3[1][1])&&(papan_3x3[0][0]=='X'||papan_3x3[0][0]=='O')){
 			if(papan_3x3[2][2]!='X'&&papan_3x3[2][2]!='O'){ //[0][0] == [1][1] --> [2][2](block)
 				papan_3x3[2][2]='O';
+				return;
 			}
 		}
 		if((papan_3x3[2][2]==papan_3x3[1][1])&&(papan_3x3[4][3]=='X'||papan_3x3[4][3]=='O')){
 			if(papan_3x3[0][0]!='X'&&papan_3x3[0][0]!='O'){ //[1][1] == [2][2] --> [0][0](block)
 				papan_3x3[0][0]='O'; 
+				return;
 			}
 		}
 		
@@ -654,11 +656,13 @@ void computer_move_3x3(char papan_3x3[3][3], char kesulitan){
 		if((papan_3x3[2][0]==papan_3x3[1][1])&&((papan_3x3[2][0]=='X')||(papan_3x3[2][0]=='O'))){
 			if((papan_3x3[0][2]!='X')&&(papan_3x3[0][2]!='O')){ //[2][0] == [1][1] --> [0][2](block)
 				papan_3x3[0][2]='O';
+				return;
 			}
 		}
 		if((papan_3x3[0][2]==papan_3x3[1][1])&&(papan_3x3[0][2]=='X'||papan_3x3[0][2]=='O')){
 			if((papan_3x3[2][0]!='X')&&(papan_3x3[2][0]!='O')){ //[1][1] == [0][2] --> [2][0](block)
 				papan_3x3[2][0]='O'; 
+				return;
 			}
 		}
 	}
